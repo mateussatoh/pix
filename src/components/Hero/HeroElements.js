@@ -19,11 +19,11 @@ export const HeroContainer = styled.div`
     bottom: 0;
     left: 0;
     background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    background-color: rgba(13, 45, 42, 0.55);
     z-index: 2;
   }
 `;
@@ -47,10 +47,11 @@ export const Background = styled.img`
 `;
 
 export const HeroContent = styled.div`
+  border-radius: 10px;
   z-index: 3;
   max-width: 1200px;
   position: absolute;
-  padding: 8px 24px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,9 +3,9 @@ import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: black;
+  background: #0f0f0f;
   height: 80px;
-  margin-top: -80px;
+  margin-top: -125px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,20 +21,18 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  padding: 0 70px;
 `;
 
 export const NavLogo = styled(LinkRouter)`
-  color: white;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
+`;
+
+export const Logo = styled.img`
+  height: 80%;
 `;
 
 export const MobileIcon = styled.div`
@@ -53,27 +51,25 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
-  align-items: center;
   list-style: none;
-  text-align: center;
-  margin-right: -22px;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  width: 90px;
+  margin-left: 20px;
 `;
 
 export const NavLinks = styled(LinkScroll)`
   color: white;
   display: flex;
   align-items: center;
+
   text-decoration: none;
-  padding: 0 1rem;
   height: 100%;
+  width: 100%;
   cursor: pointer;
 
   &.active {
@@ -83,8 +79,8 @@ export const NavLinks = styled(LinkScroll)`
 
 export const NavBtn = styled.nav`
   display: flex;
+  margin-left: 50px;
   align-items: center;
-
   @media screen and (max-width: 768px) {
     display: none;
   }

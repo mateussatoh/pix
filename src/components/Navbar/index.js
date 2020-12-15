@@ -4,6 +4,7 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
+  Logo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -11,32 +12,35 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
+import logo from "../../images/logo.png";
 
 const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">real</NavLogo>
+          <NavLogo to="/">
+            <Logo src={logo}></Logo>
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about">Sobre</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks to="discover">Descubra</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
+              <NavLinks to="services">Serviços</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="signup">Sign Up</NavLinks>
+              <NavLinks to="signup">Criar chave</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="/signin">Consultar chave</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
