@@ -1,0 +1,16 @@
+export const homeOne = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Topline",
+  headline: "Headline",
+  description: "Description",
+  buttonLabel: "Button",
+  imgStart: false,
+  img: require("../../images/bg.jpg").default,
+  alt: "alt",
+  dark: true,
+  primary: true,
+  darkText: false,
+};

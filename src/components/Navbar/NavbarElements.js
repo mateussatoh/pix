@@ -3,7 +3,7 @@ import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #0f0f0f;
+  background: rgba(20, 20, 20, 0.8);
   height: 80px;
   margin-top: -125px;
   display: flex;
@@ -29,6 +29,10 @@ export const NavLogo = styled(LinkRouter)`
   cursor: pointer;
   display: flex;
   align-items: center;
+  max-width: 200px;
+  @media screen and (max-width: 1200px) {
+    justify-self: center;
+  }
 `;
 
 export const Logo = styled.img`

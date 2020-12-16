@@ -38,7 +38,7 @@ const Hero = () => {
             primary="true"
             dark="true"
           >
-            Faça seu cadastro {hover ? <ArrowFoward /> : <ArrowRight />}
+            Crie sua chave {hover ? <ArrowFoward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
