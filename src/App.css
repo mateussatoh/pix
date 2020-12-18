@@ -4,3 +4,12 @@
   box-sizing: border-box;
   font-family: "Encode Sans Expanded", sans-serif;
 }
+
+#social {
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+
+#social:hover {
+  color: #37b4aa;
+}

@@ -25,7 +25,7 @@ const Hero = () => {
       <HeroBackground>
         <Background src={Image} />
       </HeroBackground>
-      <HeroContent>
+      {/* <HeroContent>
         <HeroH1>Faz um pix.</HeroH1>
         <HeroP>
           Cadastre sua chave e faça tranferências sem taxas e na hora.
@@ -41,7 +41,7 @@ const Hero = () => {
             Crie sua chave {hover ? <ArrowFoward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
-      </HeroContent>
+      </HeroContent> */}
     </HeroContainer>
   );
 };
