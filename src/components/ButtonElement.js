@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 
-export const Button = styled(LinkScroll)`
+export const Button = styled(LinkRouter)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "#37b4aa" : "#010606")};
   white-space: nowrap;
@@ -15,6 +15,7 @@ export const Button = styled(LinkScroll)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;
