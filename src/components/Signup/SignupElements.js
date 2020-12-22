@@ -88,10 +88,3 @@ export const FormButton = styled.button`
     color: #010606;
   }
 `;
-
-export const Text = styled.link`
-  text-align: center;
-  margin-top: 40px;
-  color: white;
-  font-size: 14px;
-`;
