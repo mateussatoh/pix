@@ -43,7 +43,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
@@ -87,4 +87,12 @@ export const FormButton = styled.button`
     background-color: #fff;
     color: #010606;
   }
+`;
+
+export const Text = styled(LinkRouter)`
+  cursor: pointer;
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  font-size: 14px;
 `;

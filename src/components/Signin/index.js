@@ -30,7 +30,8 @@ const SigninComponent = () => {
             <FormLabel htmlFor="for">Senha</FormLabel>
             <FormInput type="password" required></FormInput>
             <FormButton type="submit">Entrar</FormButton>
-            <Text>Esqueci minha senha.</Text>
+            <Text to="/signup">Já tenho uma conta Pix.</Text>
+            <Text to="/forgot_password">Esqueci minha senha.</Text>
           </Form>
         </FormWrap>
       </Container>

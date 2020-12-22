@@ -2,11 +2,9 @@ import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 
 export const Container = styled.div`
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   z-index: 0;
 
@@ -47,7 +45,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
@@ -93,7 +91,8 @@ export const FormButton = styled.button`
   }
 `;
 
-export const Text = styled.span`
+export const Text = styled(LinkRouter)`
+  cursor: pointer;
   text-align: center;
   margin-top: 40px;
   color: white;

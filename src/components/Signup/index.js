@@ -38,6 +38,8 @@ const SigninComponent = () => {
             <FormInput type="password" required></FormInput>
 
             <FormButton type="submit">Criar conta</FormButton>
+
+            <Text to="/signin">Já possuo uma conta Pix.</Text>
           </Form>
         </FormWrap>
       </Container>
