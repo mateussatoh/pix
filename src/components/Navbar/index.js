@@ -9,6 +9,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavRouter,
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
@@ -64,8 +65,12 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={80}
               >
-                Criar chave
+                Como usar
               </NavLinks>
+            </NavItem>
+
+            <NavItem>
+              <NavRouter to="/signup">Criar chave</NavRouter>
             </NavItem>
           </NavMenu>
           <NavBtn>

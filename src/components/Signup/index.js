@@ -10,7 +10,7 @@ import {
   FormInput,
   FormButton,
   Text,
-} from "./SigninElements";
+} from "./SignupElements";
 
 import logo from "../../images/logo.png";
 
@@ -24,13 +24,20 @@ const SigninComponent = () => {
               <Logo src={logo}></Logo>
             </LogoWrap>
 
-            <FormH1>Entre em sua conta Pix.</FormH1>
-            <FormLabel htmlFor="for">E-mail / CPF</FormLabel>
+            <FormH1>Crie sua conta Pix.</FormH1>
+            <FormLabel htmlFor="for">CPF</FormLabel>
             <FormInput type="email" required></FormInput>
+
+            <FormLabel htmlFor="for">E-mail</FormLabel>
+            <FormInput type="email" required></FormInput>
+
             <FormLabel htmlFor="for">Senha</FormLabel>
             <FormInput type="password" required></FormInput>
-            <FormButton type="submit">Entrar</FormButton>
-            <Text>Esqueci minha senha.</Text>
+
+            <FormLabel htmlFor="for">Confirme sua senha</FormLabel>
+            <FormInput type="password" required></FormInput>
+
+            <FormButton type="submit">Criar conta</FormButton>
           </Form>
         </FormWrap>
       </Container>

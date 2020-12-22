@@ -2,15 +2,11 @@ import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 
 export const Container = styled.div`
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  z-index: 0;
-
-  overflow: hidden;
   background: linear-gradient(150deg, rgb(55, 180, 170) 0%, rgb(5, 30, 20));
 `;
 
@@ -28,15 +24,15 @@ export const FormWrap = styled.div`
 export const LogoWrap = styled(LinkRouter)`
   cursor: pointer;
   display: flex;
-  width: 100%;
   padding: 40px 0;
+  width: 100%;
   align-items: center;
   justify-content: center;
 `;
 
 export const Logo = styled.img`
   width: 60%;
-  height: 100%;
+  height: auto;
 `;
 
 export const Form = styled.form`
@@ -93,7 +89,7 @@ export const FormButton = styled.button`
   }
 `;
 
-export const Text = styled.span`
+export const Text = styled.link`
   text-align: center;
   margin-top: 40px;
   color: white;

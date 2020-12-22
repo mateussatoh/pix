@@ -81,6 +81,21 @@ export const NavLinks = styled(LinkScroll)`
   }
 `;
 
+export const NavRouter = styled(LinkRouter)`
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid #37b4aa;
+  }
+`;
+
 export const NavBtn = styled.nav`
   display: flex;
   margin-left: 50px;

@@ -16,6 +16,7 @@ import {
 } from "./InfoElements";
 
 const Info = ({
+  signinPage,
   lightBg,
   id,
   imgStart,
@@ -43,7 +44,7 @@ const Info = ({
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to="/signin"
+                    to={signinPage ? "/signin" : "/signup"}
                     smooth={true}
                     duration={500}
                     spy={true}

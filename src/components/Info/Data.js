@@ -1,4 +1,5 @@
 export const homeOne = {
+  signinPage: true,
   id: "about",
   lightBg: false,
   lightText: true,
@@ -17,6 +18,7 @@ export const homeOne = {
 };
 
 export const homeTwo = {
+  signinPage: true,
   id: "discover",
   lightBg: true,
   lightText: false,
@@ -35,6 +37,7 @@ export const homeTwo = {
 };
 
 export const homeThree = {
+  signinPage: false,
   id: "create",
   lightBg: false,
   lightText: true,
