@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
+import styled from 'styled-components';
+import { Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: rgba(20, 20, 20, 0.8);
@@ -13,6 +13,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  min-width: 100vw;
 `;
 
 export const NavbarContainer = styled.div`
@@ -22,6 +23,9 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 70px;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const NavLogo = styled(LinkRouter)`
@@ -32,11 +36,15 @@ export const NavLogo = styled(LinkRouter)`
   max-width: 200px;
   @media screen and (max-width: 1200px) {
     justify-self: center;
+    padding-left: 30px;
   }
 `;
 
 export const Logo = styled.img`
   height: 80%;
+  @media screen and (max-width: 768px) {
+    height: 70%;
+  }
 `;
 
 export const MobileIcon = styled.div`

@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const FooterContainer = styled.div``;
+export const FooterContainer = styled.div`
+  min-width: 100vw;
+`;
 
 export const FooterWrap = styled.div`
   display: grid;
@@ -9,6 +11,9 @@ export const FooterWrap = styled.div`
   background: black;
   color: white;
   font-weight: 400;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const FooterLinksContainer = styled.div`
@@ -21,7 +26,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLink = styled.li`
   list-style: none;
   padding-top: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   transition: all 0.3s ease;

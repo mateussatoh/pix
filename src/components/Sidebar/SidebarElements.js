@@ -1,20 +1,20 @@
-import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
-import { Link as LinkRouter } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
+import styled from 'styled-components';
+import { FaTimes } from 'react-icons/fa';
+import { Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 1000;
   width: 100%;
   height: 100%;
-  background: rgba(15, 15, 15, 0.5);
+  background: rgba(15, 15, 15, 0.95);
   display: grid;
   align-items: center;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -45,7 +45,7 @@ export const SidebarMenu = styled.ul`
   }
 `;
 
-export const SidebarLink = styled(LinkScroll)`
+export const SidebarRoute = styled(LinkRouter)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,6 +55,7 @@ export const SidebarLink = styled(LinkScroll)`
   transition: 0.2s ease-in-out;
   text-decoration: none;
   color: white;
+  font-weight: bold;
 
   &:hover {
     color: #37b4aa;
@@ -67,22 +68,22 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(LinkRouter)`
-  border-radius: 50px;
-  background: #37b4aa;
-  white-space: nowrap;
-  padding: 1rem 4rem;
-  color: #010606;
-  font-size: 1rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
+// export const SidebarRoute = styled(LinkRouter)`
+//   border-radius: 50px;
+//   background: #37b4aa;
+//   white-space: nowrap;
+//   padding: 1rem 4rem;
+//   color: #010606;
+//   font-size: 1rem;
+//   outline: none;
+//   border: none;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+//   text-decoration: none;
 
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: white;
-    color: #010606;
-  }
-`;
+//   &:hover {
+//     transition: all 0.2s ease-in-out;
+//     background: white;
+//     color: #010606;
+//   }
+// `;

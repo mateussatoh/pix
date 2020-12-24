@@ -1,12 +1,14 @@
-import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
+import styled from 'styled-components';
+import { Link as LinkRouter } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  z-index: 0;
+
+  overflow: hidden;
   background: linear-gradient(150deg, rgb(55, 180, 170) 0%, rgb(5, 30, 20));
 `;
 
@@ -15,6 +17,7 @@ export const FormWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 100%;
 
   @media screen and (max-width: 480px) {
     height: 80%;
@@ -47,8 +50,9 @@ export const Form = styled.form`
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 768px) {
     padding: 32px;
+    min-width: 100%;
   }
 `;
 
